@@ -32,6 +32,11 @@ class Ui_MainWindowUI(object):
 
         self.buttonLayout.addWidget(self.btn_load)
 
+        self.btn_load_compressed = QPushButton(MainWindowUI)
+        self.btn_load_compressed.setObjectName(u"btn_load_compressed")
+
+        self.buttonLayout.addWidget(self.btn_load_compressed)
+
         self.btn_compress = QPushButton(MainWindowUI)
         self.btn_compress.setObjectName(u"btn_compress")
 
@@ -85,6 +90,7 @@ class Ui_MainWindowUI(object):
     def retranslateUi(self, MainWindowUI):
         MainWindowUI.setWindowTitle(QCoreApplication.translate("MainWindowUI", u"JPEG Compression Demo", None))
         self.btn_load.setText(QCoreApplication.translate("MainWindowUI", u"Load Image", None))
+        self.btn_load_compressed.setText(QCoreApplication.translate("MainWindowUI", u"Load Compressed File", None))
         self.btn_compress.setText(QCoreApplication.translate("MainWindowUI", u"Compress & Decompress", None))
         self.lbl_original.setText(QCoreApplication.translate("MainWindowUI", u"Original Image", None))
         self.lbl_result.setText(QCoreApplication.translate("MainWindowUI", u"Decompressed Image", None))

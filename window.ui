@@ -24,6 +24,13 @@
       </widget>
      </item>
      <item>
+      <widget class="QPushButton" name="btn_load_compressed">
+       <property name="text">
+        <string>Load Compressed File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="btn_compress">
        <property name="text">
         <string>Compress &amp; Decompress</string>
